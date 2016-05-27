@@ -25,5 +25,11 @@ public class ShoppingCartService {
 
     }
 
+    public Cart getCart(String sessionId) {
+
+        return cache.get(sessionId);
+
+    }
+
 
 }
