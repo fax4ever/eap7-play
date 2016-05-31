@@ -1,13 +1,13 @@
 package it.redhat.demo.service;
 
-import it.redhat.demo.producer.HelloCache;
 import org.infinispan.Cache;
-import org.infinispan.manager.CacheContainer;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import javax.ws.rs.*;
-import javax.ws.rs.core.MediaType;
+import javax.ws.rs.GET;
+import javax.ws.rs.PUT;
+import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 
 /**
  * @author Fabio Massimo Ercoli
@@ -19,13 +19,11 @@ import javax.ws.rs.core.MediaType;
 public class CacheRestService {
 
     @Inject
-    @HelloCache
-    private CacheContainer cacheContainer;
+    private Cache<String, String> cache;
 
     @GET
     public String get(@PathParam("key") String key) {
 
-        Cache<String, String> cache = cacheContainer.getCache("hello");
         return cache.get(key);
 
     }
@@ -33,7 +31,6 @@ public class CacheRestService {
     @PUT
     public void put(@PathParam("key") String key, String value) {
 
-        Cache<String, String> cache = cacheContainer.getCache("hello");
         cache.put(key, value);
 
     }

@@ -5,6 +5,7 @@ import it.redhat.demo.model.Item;
 import org.infinispan.Cache;
 
 import javax.ejb.Stateless;
+import javax.inject.Inject;
 
 /**
  * @author Fabio Massimo Ercoli
@@ -14,6 +15,7 @@ import javax.ejb.Stateless;
 @Stateless
 public class ShoppingCartService {
 
+    @Inject
     private Cache<String, Cart> cache;
 
     public void addFirstItem(String sessionId, String itemName, String itemCode) {
