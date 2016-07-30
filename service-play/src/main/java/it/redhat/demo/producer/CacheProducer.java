@@ -1,6 +1,7 @@
 package it.redhat.demo.producer;
 
 import it.redhat.demo.model.Cart;
+import it.redhat.demo.model.Widget;
 import org.infinispan.Cache;
 import org.infinispan.manager.CacheContainer;
 
@@ -16,6 +17,7 @@ public class CacheProducer {
 
     private final static String STRING_CACHE = "stringCache";
     private final static String CART_CACHE = "cartCache";
+    private final static String WIDGET_CACHE = "widgetCache";
 
     @Inject
     private CacheContainer cacheContainer;
@@ -31,6 +33,13 @@ public class CacheProducer {
     public Cache<String, Cart> getCartCache() {
 
         return cacheContainer.getCache(CART_CACHE);
+
+    }
+
+    @Produces
+    public Cache<String, Widget> getWidgetCache() {
+
+        return cacheContainer.getCache(WIDGET_CACHE);
 
     }
 
