@@ -10,6 +10,7 @@
     <modules>
         <module>model-play</module>
         <module>service-play</module>
+        <module>eap7-ws</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -55,13 +56,6 @@
                 <version>${version.org.infinispan}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.jboss.spec.javax.ws.rs</groupId>
-                <artifactId>jboss-jaxrs-api_2.0_spec</artifactId>
-                <version>1.0.0.Final-redhat-1</version>
-                <scope>provided</scope>
             </dependency>
 
             <dependency>
