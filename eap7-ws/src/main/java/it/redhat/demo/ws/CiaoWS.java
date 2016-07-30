@@ -9,13 +9,10 @@ import javax.jws.WebService;
  *         on 30/07/16
  */
 
-@WebService
-public class CiaoWS {
+@WebService(targetNamespace = "http://ws.demo.redhat.it/")
+public interface CiaoWS {
 
     @WebMethod
-    public String ciao() {
-        return "ciao";
-    }
-
+    String ciao(String name);
 
 }
