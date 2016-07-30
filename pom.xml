@@ -11,6 +11,7 @@
         <module>model-play</module>
         <module>service-play</module>
         <module>eap7-ws</module>
+        <module>eap7-wsclient</module>
     </modules>
     <packaging>pom</packaging>
 
