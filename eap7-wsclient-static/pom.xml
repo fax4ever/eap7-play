@@ -53,9 +53,14 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <wsdlUrls>
+                    <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
+                    <wsdlFiles>
+                        <wsdlFile>ciao.wsdl</wsdlFile>
+                    </wsdlFiles>
+                    <!-- when the server is up uncomment wsdlUrls tag -->
+                    <!--<wsdlUrls>
                         <wsdlUrl>http://localhost:8180/eap7-ws/CiaoService?wsdl</wsdlUrl>
-                    </wsdlUrls>
+                    </wsdlUrls>-->
                     <keep>true</keep>
                     <packageName>it.redhat.demo</packageName>
                     <vmArgs>
