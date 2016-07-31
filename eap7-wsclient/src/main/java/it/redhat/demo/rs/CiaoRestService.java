@@ -18,13 +18,12 @@ import javax.ws.rs.PathParam;
 public class CiaoRestService {
 
     @Inject
-    private CiaoWS service;
+    private CiaoGateway ciaoGateway;
 
     @GET
     @Path("{name}")
     public String ciao(@PathParam("name") String name) {
 
-        CiaoGateway ciaoGateway = new CiaoGateway();
         return ciaoGateway.ciao(name);
 
     }
