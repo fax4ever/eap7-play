@@ -12,6 +12,7 @@
         <module>service-play</module>
         <module>eap7-ws</module>
         <module>eap7-wsclient</module>
+        <module>eap7-wsclient-static</module>
     </modules>
     <packaging>pom</packaging>
 

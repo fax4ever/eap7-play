@@ -9,7 +9,7 @@
         <artifactId>eap7-play</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>eap7-wsclient</artifactId>
+    <artifactId>eap7-wsclient-static</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
@@ -53,10 +53,9 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <wsdlDirectory>${basedir}/src/main/resources</wsdlDirectory>
-                    <wsdlFiles>
-                        <wsdlFile>ciao.wsdl</wsdlFile>
-                    </wsdlFiles>
+                    <wsdlUrls>
+                        <wsdlUrl>http://localhost:8180/eap7-ws/CiaoService?wsdl</wsdlUrl>
+                    </wsdlUrls>
                     <keep>true</keep>
                     <packageName>it.redhat.demo</packageName>
                     <vmArgs>
