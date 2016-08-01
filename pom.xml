@@ -15,6 +15,7 @@
         <module>eap7-wsclient-static</module>
         <module>eap7-ws-hello</module>
         <module>eap7-ws-topdown</module>
+        <module>eap7-ws-jaxb</module>
     </modules>
     <packaging>pom</packaging>
 
