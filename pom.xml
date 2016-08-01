@@ -14,6 +14,7 @@
         <module>eap7-wsclient</module>
         <module>eap7-wsclient-static</module>
         <module>eap7-wshello</module>
+        <module>eap7-ws-topdown</module>
     </modules>
     <packaging>pom</packaging>
 
