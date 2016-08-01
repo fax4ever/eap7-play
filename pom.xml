@@ -13,6 +13,7 @@
         <module>eap7-ws</module>
         <module>eap7-wsclient</module>
         <module>eap7-wsclient-static</module>
+        <module>eap7-wshello</module>
     </modules>
     <packaging>pom</packaging>
 
