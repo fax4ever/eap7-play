@@ -9,17 +9,10 @@
         <artifactId>eap7-play</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <artifactId>service-play</artifactId>
+    <artifactId>eap7-jdg-lib</artifactId>
     <packaging>war</packaging>
 
     <dependencies>
-
-        <!-- MODEL -->
-        <dependency>
-            <groupId>it.redhat.demo</groupId>
-            <artifactId>model-play</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
         <!-- JEE 7 -->
         <dependency>

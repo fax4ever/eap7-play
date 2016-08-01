@@ -8,8 +8,7 @@
     <artifactId>eap7-play</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>model-play</module>
-        <module>service-play</module>
+        <module>eap7-jdg-lib</module>
         <module>eap7-ws</module>
         <module>eap7-wsclient</module>
         <module>eap7-wsclient-static</module>
