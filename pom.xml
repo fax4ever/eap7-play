@@ -10,8 +10,8 @@
     <modules>
         <module>eap7-jdg-lib</module>
         <module>eap7-ws</module>
-        <module>eap7-wsclient</module>
-        <module>eap7-wsclient-static</module>
+        <module>eap7-ws-cli</module>
+        <module>eap7-ws-fixcli</module>
         <module>eap7-ws-hello</module>
         <module>eap7-ws-topdown</module>
         <module>eap7-ws-jaxb</module>
