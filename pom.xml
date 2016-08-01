@@ -16,6 +16,7 @@
         <module>eap7-ws-topdown</module>
         <module>eap7-ws-jaxb</module>
         <module>eap7-ws-jaxb-top</module>
+        <module>eap7-ws-jaxb-client</module>
     </modules>
     <packaging>pom</packaging>
 
