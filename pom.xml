@@ -32,7 +32,7 @@
         <version.org.jboss.spec.jboss.javaee7>1.0.3.Final-redhat-2</version.org.jboss.spec.jboss.javaee7>
 
         <!-- JEE 7 EAP Implementation -->
-        <version.jboss.bom.eap>7.0.0.GA</version.jboss.bom.eap>
+        <version.jboss.bom.eap>7.0.2.GA</version.jboss.bom.eap>
 
         <!-- Cache Infinispan (jdg 7 beta) -->
         <!-- need Red Hat Early Access Maven Repository -->
@@ -53,6 +53,14 @@
             <dependency>
                 <groupId>org.jboss.bom</groupId>
                 <artifactId>jboss-eap-javaee7-with-tools</artifactId>
+                <version>${version.jboss.bom.eap}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.bom</groupId>
+                <artifactId>jboss-eap-javaee7-with-spring4</artifactId>
                 <version>${version.jboss.bom.eap}</version>
                 <type>pom</type>
                 <scope>import</scope>
