@@ -18,6 +18,7 @@
         <module>eap7-ws-jaxb-top</module>
         <module>eap7-ws-jaxb-client</module>
         <module>eap7-security</module>
+        <module>eap7-webflow</module>
     </modules>
     <packaging>pom</packaging>
 
