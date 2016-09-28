@@ -21,15 +21,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
         http
             .formLogin()
-            .loginPage("/web/login")
-            .loginProcessingUrl("/web/loginProcess")
-            .defaultSuccessUrl("/web/employee")
-            .failureUrl("/web/login?login_error=1")
-            .and()
+                .loginPage("/web/login")
+                .loginProcessingUrl("/web/loginProcess")
+                .defaultSuccessUrl("/web/employee")
+                .failureUrl("/web/login?login_error=1")
+                .and()
             .logout()
-            .logoutUrl("/web/logout")
-            .logoutSuccessUrl("/web/logoutSuccess")
-            .and()
+                .logoutUrl("/web/logout")
+                .logoutSuccessUrl("/web/logoutSuccess")
+                .and()
 
             // Disable CSRF (won't work with JSF) but ensure last HTTP POST request is saved
             // See https://jira.springsource.org/browse/SEC-2498

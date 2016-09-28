@@ -19,6 +19,7 @@ public class WebFlowConfig extends AbstractFacesFlowConfiguration {
     public FlowExecutor flowExecutor() {
         return getFlowExecutorBuilder(flowRegistry())
                 .addFlowExecutionListener(new FlowFacesContextLifecycleListener())
+                .addFlowExecutionListener(new SecurityFlowExecutionListener())
                 .build();
     }
 
