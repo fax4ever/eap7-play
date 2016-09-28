@@ -9,6 +9,9 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @ComponentScan(basePackages = "it.redhat.demo")
-@Import(value={WebMvcConfig.class})
+@Import(value={
+    WebMvcConfig.class,
+    WebFlowConfig.class
+})
 public class AppConfig {
 }

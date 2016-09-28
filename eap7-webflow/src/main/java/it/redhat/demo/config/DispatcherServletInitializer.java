@@ -1,9 +1,12 @@
 package it.redhat.demo.config;
 
+import com.sun.faces.config.ConfigureListener;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 
 /**
  * Created by fabio on 27/09/16.
@@ -28,6 +31,22 @@ public class DispatcherServletInitializer extends AbstractAnnotationConfigDispat
     @Override
     protected Filter[] getServletFilters() {
         return new Filter[] { new CharacterEncodingFilter() };
+    }
+
+    @Override
+    public void onStartup(ServletContext servletContext) throws ServletException {
+
+        // Use JSF view templates saved as *.xhtml, for use with Facelets
+        servletContext.setInitParameter("javax.faces.DEFAULT_SUFFIX", ".xhtml");
+        // Enable special Facelets debug output during development
+        servletContext.setInitParameter("javax.faces.PROJECT_STAGE", "Development");
+        // Causes Facelets to refresh templates during development
+        servletContext.setInitParameter("javax.faces.FACELETS_REFRESH_PERIOD", "1");
+
+        servletContext.addListener(ConfigureListener.class);
+
+        // Let the DispatcherServlet be registered
+        super.onStartup(servletContext);
     }
 
 }
