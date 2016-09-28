@@ -42,6 +42,8 @@ public class DispatcherServletInitializer extends AbstractAnnotationConfigDispat
         servletContext.setInitParameter("javax.faces.PROJECT_STAGE", "Development");
         // Causes Facelets to refresh templates during development
         servletContext.setInitParameter("javax.faces.FACELETS_REFRESH_PERIOD", "1");
+        // Declare Spring Security Facelets tag library
+        servletContext.setInitParameter("javax.faces.FACELETS_LIBRARIES", "/WEB-INF/springsecurity.taglib.xml");
 
         servletContext.addListener(ConfigureListener.class);
 

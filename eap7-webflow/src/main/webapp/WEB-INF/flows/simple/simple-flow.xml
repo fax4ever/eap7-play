@@ -5,6 +5,8 @@
 		http://www.springframework.org/schema/webflow
 		http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
+    <secured attributes="ROLE_USER" />
+
     <on-start>
         <evaluate expression="employeeService.create()" result="flowScope.employee" />
     </on-start>
