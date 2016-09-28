@@ -34,6 +34,8 @@
         <!-- JEE 7 EAP Implementation -->
         <version.jboss.bom.eap>7.0.2.GA</version.jboss.bom.eap>
 
+        <version.jsf>2.2.12</version.jsf>
+
         <!-- Cache Infinispan (jdg 7 beta) -->
         <!-- need Red Hat Early Access Maven Repository -->
         <version.org.infinispan>8.3.0.ER4-redhat-1</version.org.infinispan>
