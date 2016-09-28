@@ -35,7 +35,12 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <c:if test="${not empty currentUser.name}">
-                            Welcome, ${currentUser.name} | <a href="${request.contextPath}/web/logout">Logout</a>
+                            <span class="navbar-text">Welcome, ${currentUser.name}</span>
+                        </c:if>
+                    </li>
+                    <li>
+                        <c:if test="${not empty currentUser.name}">
+                             <a href="${request.contextPath}/web/logout">Logout</a>
                         </c:if>
                         <c:if test="${empty currentUser.name}">
                             <a href="${request.contextPath}/web/login">Login</a>
