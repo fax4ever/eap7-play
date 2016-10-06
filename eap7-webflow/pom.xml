@@ -13,7 +13,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <version.primefaces>6.0.1</version.primefaces>
+        <version.primefaces>6.0</version.primefaces>
     </properties>
 
     <dependencies>
