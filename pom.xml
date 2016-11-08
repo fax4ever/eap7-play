@@ -20,6 +20,7 @@
         <module>eap7-security</module>
         <module>eap7-webflow</module>
         <module>eap7-rs</module>
+        <module>eap7-spring-saml</module>
     </modules>
     <packaging>pom</packaging>
 

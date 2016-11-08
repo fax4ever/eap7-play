@@ -1,4 +1,4 @@
-package it.redhat.demo;
+package it.redhat.demo.web;
 
 import it.redhat.demo.model.Ext;
 import org.slf4j.Logger;
@@ -50,6 +50,21 @@ public class RestService {
         for (Map.Entry<String, List<String>> entry : headers.getRequestHeaders().entrySet()) {
             log.info("header {} :: value {}", entry.getKey(), entry.getValue());
         }
+
+    }
+
+    @Path("containers/main/processes/{processId}/instances")
+    @POST
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Long startProcess(String content, @Context HttpHeaders headers) {
+
+        log.info("content {}", content);
+
+        for (Map.Entry<String, List<String>> entry : headers.getRequestHeaders().entrySet()) {
+            log.info("header {} :: value {}", entry.getKey(), entry.getValue());
+        }
+
+        return 7l;
 
     }
 

@@ -1,4 +1,4 @@
-package it.redhat.demo;
+package it.redhat.demo.web;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
