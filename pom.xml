@@ -21,6 +21,7 @@
         <module>eap7-webflow</module>
         <module>eap7-rs</module>
         <module>eap7-spring-saml</module>
+        <module>eap7-jms2</module>
     </modules>
     <packaging>pom</packaging>
 
