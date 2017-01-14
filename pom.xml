@@ -7,6 +7,8 @@
     <groupId>it.redhat.demo</groupId>
     <artifactId>eap7-play</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>eap7-jdg-lib</module>
         <module>eap7-ws</module>
@@ -23,7 +25,6 @@
         <module>eap7-spring-saml</module>
         <module>eap7-jms2</module>
     </modules>
-    <packaging>pom</packaging>
 
     <properties>
 
