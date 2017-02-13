@@ -17,6 +17,9 @@ public class RestServer {
 
     @GET
     public String ciao() {
+
+        log.info("ciao invoked");
+
         return "ciao";
     }
 
