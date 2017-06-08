@@ -25,6 +25,7 @@
         <module>eap7-spring-saml</module>
         <module>eap7-jms2</module>
         <module>eap7-jpa</module>
+        <module>eap7-rest-client</module>
     </modules>
 
     <properties>

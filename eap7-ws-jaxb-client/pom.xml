@@ -57,10 +57,6 @@
                     <wsdlFiles>
                         <wsdlFile>employee.wsdl</wsdlFile>
                     </wsdlFiles>
-                    <!-- when the server is up uncomment wsdlUrls tag -->
-                    <!--<wsdlUrls>
-                        <wsdlUrl>http://localhost:8180/eap7-ws/CiaoService?wsdl</wsdlUrl>
-                    </wsdlUrls>-->
                     <keep>true</keep>
                     <packageName>it.redhat.demo</packageName>
                     <vmArgs>

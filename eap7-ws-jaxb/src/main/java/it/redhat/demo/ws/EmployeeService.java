@@ -4,6 +4,8 @@ import it.redhat.demo.model.Employee;
 import it.redhat.demo.model.Expense;
 import it.redhat.demo.model.ExpenseRequest;
 import it.redhat.demo.model.ExpenseResponse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.jws.WebService;
 import java.math.BigDecimal;
@@ -21,7 +23,14 @@ import java.util.Date;
 @WebService
 public class EmployeeService {
 
+    private static final Logger LOG = LoggerFactory.getLogger(EmployeeService.class);
+
     public ExpenseResponse findExpenses(ExpenseRequest request) {
+
+        LOG.info("incoming request {}", request);
+        if (request!= null) {
+            LOG.info("employee code {}", request.getEmployeeCode());
+        }
 
         Expense expense = new Expense();
         expense.setAmount(new BigDecimal("10.30"));
