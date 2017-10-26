@@ -6,6 +6,6 @@ import javax.ws.rs.core.Application;
 /**
  * Created by fabio.ercoli@redhat.com on 14/01/17.
  */
-@ApplicationPath("")
+@ApplicationPath("/")
 public class RestApp extends Application {
 }

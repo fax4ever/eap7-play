@@ -1,16 +1,16 @@
 package it.redhat.demo.rest;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.QueryParam;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * Created by fabio.ercoli@redhat.com on 14/01/17.
  */
-@Path("")
+@Path("/")
 public class RestServer {
 
     private static Logger log = LoggerFactory.getLogger(RestServer.class);
