@@ -42,9 +42,8 @@
 
         <version.jsf>2.2.12</version.jsf>
 
-        <!-- Cache Infinispan (jdg 7 beta) -->
-        <!-- need Red Hat Early Access Maven Repository -->
-        <version.org.infinispan>8.3.0.ER4-redhat-1</version.org.infinispan>
+        <!-- Cache Infinispan (jdg 7) -->
+        <version.org.infinispan>8.3.1.Final-redhat-2</version.org.infinispan>
 
     </properties>
 
